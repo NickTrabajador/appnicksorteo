@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import sorteoImage from './assets/images/sorteo.jpg'; // Importa la imagen desde src/assets
+import '@fontsource/roboto'; 
 
 const Sorteo = () => {
   const [participantes, setParticipantes] = useState('');
