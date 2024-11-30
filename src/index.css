@@ -75,9 +75,12 @@ body {
   color: white;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
-  opacity: 0.9;
+.btn-primary:hover{
+  background-color: #d40000;
+}
+
+.btn-secondary:hover{
+  background-color: #0164cd;
 }
 
 /* Contenedor de imagen */
