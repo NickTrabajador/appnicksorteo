@@ -27,6 +27,7 @@ body {
 .sorteo-container h2 {
   font-size: 1.25rem;
   margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Grupo del formulario */
