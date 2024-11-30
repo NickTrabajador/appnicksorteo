@@ -76,11 +76,11 @@ body {
 }
 
 .btn-primary:hover{
-  background-color: #e00000;
+  background-color: #0056b3;
 }
 
 .btn-secondary:hover{
-  background-color: #0056b3;
+  background-color: #e00000;
 }
 
 /* Contenedor de imagen */
