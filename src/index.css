@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1b28;
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+.sorteo-container {
+  width: 95%; 
+  max-width: 600px;
+  margin: 20px auto; /* Aumentado el margen superior e inferior */
+  padding: 20px;
+  background-color: #1e2a38;
+  border-radius: 8px;
+  border: 6px solid #ff0000; /* Marco rojo */
+  color: white;
+  text-align: center;
+}
+
+/* Texto del título */
+.sorteo-container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+/* Grupo del formulario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.input-participantes,
+.input-ganadores {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #007bff;
+  background-color: #0d1b28;
+  color: white;
+}
+
+.input-participantes {
+  resize: none;
+}
+
+/* Botones */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #ff0000; 
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* Contenedor de imagen */
+.image-container {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #007bff;
+}
+
+.winner-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.winner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Ajusta para un centrado perfecto */
+  display: flex;
+  flex-direction: column; /* Apila los nombres verticalmente */
+  align-items: center; /* Centra los nombres horizontalmente */
+  gap: 4px; 
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  animation: fadeIn 6s ease-in-out;
+  max-height: 92%; 
+  overflow-y: auto; 
+  width: 80%; 
+}
+
+.winner-name {
+  background-color: #EF5350;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 480px) {
+  .winner-text {
+    font-size: 1.25rem; /* Reduce el tamaño del texto */
+    padding: 8px 10px; 
+  }
+
+  .winner-name {
+    font-size: 1rem; 
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    width: 24px; /* Aumentar el tamaño de los botones */
+    height: 24px;
+    background-color: #007bff; /* Color de fondo para resaltar */
+    border-radius: 50%; /* Opcional: para un diseño más amigable */
+  }
+
+  }
+
+  @media (max-width: 480px), (max-width: 512px) {
+    .sorteo-container {
+      width: 90%; /* Ajustar a casi todo el ancho */
+      padding: 15px;
+    }
+  
+    .sorteo-container h2 {
+      font-size: 1.2rem;
+    }
+  
+    .winner-text {
+      font-size: 1rem; /* Reducir texto */
+      padding: 8px;
+    }
+  
+    .winner-name {
+      font-size: 0.875rem; /* Reducir texto del nombre */
+      padding: 4px 8px;
+    }
+  }
+  
+  /* Ajustes específicos para dispositivos plegables o mayores */
+  @media (min-width: 512px) and (max-width: 768px) {
+    .sorteo-container {
+      max-width: 80%;
+      margin: 10px auto; /* Reducir márgenes */
+      padding: 20px;
+    }
+  
+    .sorteo-container h2 {
+      font-size: 1.4rem;
+    }
+  
+    .input-participantes, .input-ganadores {
+      padding: 12px;
+    }
+  
+    .winner-text {
+      font-size: 1.25rem; /* Escalar texto ligeramente */
+      padding: 12px 15px;
+    }
+  
+    .winner-name {
+      font-size: 1rem;
+      padding: 6px 12px;
+    }
+  }
+
+/* Ajustes específicos para dispositivos plegables o mayores */
+@media (min-width: 512px) and (max-width: 768px) {
+  .sorteo-container {
+    max-width: 80%;
+    margin: 10px auto; /* Reducir márgenes */
+    padding: 20px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 12px;
+  }
+
+  .winner-text {
+    font-size: 1.25rem; /* Escalar texto ligeramente */
+    padding: 12px 15px;
+  }
+
+  .winner-name {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}
+
+
+/* Estilo para pantallas medianas */
+@media(min-width: 768px) {
+  .sorteo-container {
+    width: 100%; 
+    padding: 30px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 15px;
+  }
+}
+
+/* Estilo para pantallas grandes */
+@media(min-width: 1024px) {
+  .sorteo-container {
+    width: 100%; 
+    padding: 40px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 1.72rem;
+    margin-bottom: 25px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 20px;
+  }
+}
+
+/* Estilo para pantallas muy grandes */
+@media(min-width: 1440px) {
+  .sorteo-container {
+    width: 100%; 
+    padding: 50px;
+  }
+
+  .sorteo-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .input-participantes, .input-ganadores {
+    padding: 25px;
+  }
+
+  .btn {
+    padding: 25px;
+  }
+}
