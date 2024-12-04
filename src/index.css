@@ -272,6 +272,23 @@ body {
   }
 }
 
+
+/* Ajustes para dispositivos como iPad Mini, iPad Pro, y iPad Air */
+@media (min-width: 768px) and (max-width: 1024px) {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    width: 30px; /* Ajusta el ancho de las flechas */
+    height: 30px; /* Ajusta el alto de las flechas */
+    background-color: #007bff; /* Color de fondo para destacar */
+  }
+
+  .input-ganadores {
+    font-size: 1.6rem; /* Escala el texto */
+    padding: 15px; /* Ajusta el padding */
+  }
+}
+
+
 /* Estilo para pantallas grandes */
 @media(min-width: 1024px) {
   .sorteo-container {
