@@ -259,6 +259,10 @@ body {
     padding: 15px;
   }
 
+  .input-participantes{
+    font-size: 1rem;
+  }
+
   .btn {
     padding: 15px;
   }
