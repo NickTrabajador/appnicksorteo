@@ -231,6 +231,10 @@ body {
     padding: 12px;
   }
 
+  .input-participantes{
+    font-size: 1.6rem;
+  }
+
   .winner-text {
     font-size: 1.25rem; /* Escalar texto ligeramente */
     padding: 12px 15px;
@@ -260,7 +264,7 @@ body {
   }
 
   .input-participantes{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .btn {
