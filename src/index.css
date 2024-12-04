@@ -55,7 +55,6 @@ body {
 
 .input-participantes {
   resize: none;
-  font-size: 2.2rem; 
 }
 
 /* Botones */
@@ -300,6 +299,10 @@ body {
 
   .input-participantes, .input-ganadores {
     padding: 25px;
+  }
+
+  .input-participantes{
+    font-size: 1.8rem;
   }
 
   .btn {
