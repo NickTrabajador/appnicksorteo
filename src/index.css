@@ -324,6 +324,15 @@ body {
     font-size: 1rem;
   }
 
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    width: 24px; /* Aumentar el tamaño de los botones */
+    height: 24px;
+    background-color: #007bff; /* Color de fondo para resaltar */
+    border-radius: 40%; /* Opcional: para un diseño más amigable */
+  }
+
   .btn {
     padding: 25px;
   }
