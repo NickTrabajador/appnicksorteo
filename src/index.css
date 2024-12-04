@@ -157,6 +157,11 @@ body {
     font-size: 1rem; 
   }
 
+  .input-participantes{
+    font-size: 1rem;
+  }
+
+
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     width: 24px; /* Aumentar el tamaño de los botones */
