@@ -149,7 +149,7 @@ body {
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 480px) {
   .winner-text {
-    font-size: 1.55rem; /* Reduce el tamaño del texto */
+    font-size: 1.45rem; /* Reduce el tamaño del texto */
     padding: 8px 10px; 
   }
 
