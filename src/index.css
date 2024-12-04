@@ -330,7 +330,7 @@ body {
     width: 24px; /* Aumentar el tamaño de los botones */
     height: 24px;
     background-color: #007bff; /* Color de fondo para resaltar */
-    border-radius: 40%; /* Opcional: para un diseño más amigable */
+    border-radius: 50%; /* Opcional: para un diseño más amigable */
   }
 
   .btn {
