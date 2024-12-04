@@ -277,8 +277,8 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
-    width: 30px; /* Ajusta el ancho de las flechas */
-    height: 30px; /* Ajusta el alto de las flechas */
+    width: 50px; /* Ajusta el ancho de las flechas */
+    height: 50px; /* Ajusta el alto de las flechas */
     background-color: #007bff; /* Color de fondo para destacar */
   }
 
