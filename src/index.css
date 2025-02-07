@@ -129,6 +129,20 @@ body {
   border-radius: 5px;
 }
 
+
+input[type="number"] {
+  font-size: 2rem; /* Aumenta el tamaño del número */
+  width: 100px; /* Asegura suficiente espacio */
+  height: 50px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  width: 30px; /* Aumenta el tamaño de las flechas */
+  height: 30px;
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
