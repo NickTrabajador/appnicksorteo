@@ -132,7 +132,7 @@ body {
 
 input[type="number"] {
   font-size: 2rem; /* Aumenta el tamaño del número */
-  width: 200px; /* Mantiene el recuadro largo */
+  width: 400px; /* Mantiene el recuadro largo */
   height: 60px; /* Ajusta la altura */
   text-align: center; /* Centra el número */
   padding-right: 40px; /* Espacio para las flechas */
