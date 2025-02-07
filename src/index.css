@@ -160,7 +160,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 480px) {
   .winner-text {
-    font-size: 1.25rem; /* Reduce el tamaño del texto */
+    font-size: 1.45rem; /* Reduce el tamaño del texto */
     padding: 8px 10px; 
   }
 
@@ -185,7 +185,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
   
     .sorteo-container h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   
     .winner-text {
