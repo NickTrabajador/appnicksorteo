@@ -183,32 +183,6 @@ body {
     }
   }
   
-  /* Ajustes específicos para dispositivos plegables o mayores */
-  @media (min-width: 512px) and (max-width: 768px) {
-    .sorteo-container {
-      max-width: 80%;
-      margin: 10px auto; /* Reducir márgenes */
-      padding: 20px;
-    }
-  
-    .sorteo-container h2 {
-      font-size: 1.4rem;
-    }
-  
-    .input-participantes, .input-ganadores {
-      padding: 12px;
-    }
-  
-    .winner-text {
-      font-size: 1.25rem; /* Escalar texto ligeramente */
-      padding: 12px 15px;
-    }
-  
-    .winner-name {
-      font-size: 1rem;
-      padding: 6px 12px;
-    }
-  }
 
 /* Ajustes específicos para dispositivos plegables o mayores */
 @media (min-width: 512px) and (max-width: 768px) {
