@@ -139,7 +139,7 @@ input[type="number"] {
 }
 
 input[type="number"]::-webkit-inner-spin-button {
-  width: 35px; /* Hace las flechas más grandes */
+  width: 45px; /* Hace las flechas más grandes */
   height: 35px;
 }
 
