@@ -132,13 +132,15 @@ body {
 
 input[type="number"] {
   font-size: 2rem; /* Aumenta el tamaño del número */
-  width: 100px; /* Asegura suficiente espacio */
-  height: 50px;
+  width: 200px; /* Mantiene el recuadro largo */
+  height: 60px; /* Ajusta la altura */
+  text-align: center; /* Centra el número */
+  padding-right: 40px; /* Espacio para las flechas */
 }
 
 input[type="number"]::-webkit-inner-spin-button {
-  width: 30px; /* Aumenta el tamaño de las flechas */
-  height: 30px;
+  width: 35px; /* Hace las flechas más grandes */
+  height: 35px;
 }
 
 
