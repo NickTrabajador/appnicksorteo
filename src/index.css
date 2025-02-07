@@ -253,7 +253,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Estilo para pantallas grandes */
 @media(min-width: 1024px) {
   .sorteo-container {
-    width: 100%; 
+    width: 110%; 
     padding: 40px;
   }
 
