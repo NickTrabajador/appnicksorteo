@@ -32,12 +32,28 @@ body {
 /* Grupo del formulario */
 .form-group {
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .form-group label {
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 8px;
+  align-items: center;
+}
+
+.form-group--duplicados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px 0px 2px 0px;
+}
+
+.form-group--duplicados input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff;
 }
 
 /* Inputs */
@@ -49,10 +65,22 @@ body {
   border: 1px solid #007bff;
   background-color: #0d1b28;
   color: white;
+  font-size: 1.42rem;
 }
 
 .input-participantes {
   resize: none;
+}
+
+.input-tiempo {
+width: 100%;
+margin:10px;
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #007bff;
+background-color: #0d1b28;
+color: white;
+text-align: center;
 }
 
 /* Botones */
@@ -73,6 +101,7 @@ body {
 .btn-secondary {
   background-color: #ff0000; 
   color: white;
+  margin-top: 8pxpx;
 }
 
 .btn-primary:hover,
@@ -178,34 +207,44 @@ input[type="number"]::-webkit-inner-spin-button {
 
   }
 
-  @media (max-width: 480px), (max-width: 512px) {
-    .sorteo-container {
-      width: 90%; /* Ajustar a casi todo el ancho */
-      padding: 15px;
-    }
-  
-    .sorteo-container h2 {
-      font-size: 1.4rem;
-    }
-  
-    .winner-text {
-      font-size: 1rem; /* Reducir texto */
-      padding: 8px;
-    }
-  
-    .winner-name {
-      font-size: 0.875rem; /* Reducir texto del nombre */
-      padding: 4px 8px;
-    }
+ /* Estilo para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .sorteo-container {
+    width: 90%;
+    padding: 15px;
   }
-  
-  
 
-/* Ajustes específicos para dispositivos plegables o mayores */
-@media (min-width: 512px) and (max-width: 768px) {
+  .sorteo-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .winner-text {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .winner-name {
+    font-size: 0.875rem;
+    padding: 4px 8px;
+  }
+
+  .input-participantes,
+  .input-ganadores {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Ajustes para pantallas de 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
   .sorteo-container {
     max-width: 80%;
-    margin: 10px auto; /* Reducir márgenes */
+    margin: 10px auto;
     padding: 20px;
   }
 
@@ -213,12 +252,13 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1.4rem;
   }
 
-  .input-participantes, .input-ganadores {
+  .input-participantes,
+  .input-ganadores {
     padding: 12px;
   }
 
   .winner-text {
-    font-size: 1.25rem; /* Escalar texto ligeramente */
+    font-size: 1.25rem;
     padding: 12px 15px;
   }
 
@@ -226,13 +266,17 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 1rem;
     padding: 6px 12px;
   }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+  }
 }
 
-
 /* Estilo para pantallas medianas */
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .sorteo-container {
-    width: 100%; 
+    width: 100%;
     padding: 30px;
   }
 
@@ -241,7 +285,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 20px;
   }
 
-  .input-participantes, .input-ganadores {
+  .input-participantes,
+  .input-ganadores {
     padding: 15px;
   }
 
@@ -251,9 +296,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* Estilo para pantallas grandes */
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .sorteo-container {
-    width: 100%; 
+    width: 100%;
     padding: 40px;
   }
 
@@ -262,7 +307,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 25px;
   }
 
-  .input-participantes, .input-ganadores {
+  .input-participantes,
+  .input-ganadores {
     padding: 20px;
   }
 
@@ -272,18 +318,19 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* Estilo para pantallas muy grandes */
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   .sorteo-container {
-    width: 100%; 
+    width: 100%;
     padding: 50px;
   }
 
   .sorteo-container h2 {
     font-size: 2.9rem;
-    margin-bottom: 30px
+    margin-bottom: 30px;
   }
 
-  .input-participantes, .input-ganadores {
+  .input-participantes,
+  .input-ganadores {
     padding: 25px;
   }
 
